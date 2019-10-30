@@ -134,33 +134,3 @@ function minimax(newBoard, player) {
   }
   return moves[bestMove];
 }
-
-// const grid = () => Array.from(document.getElementsByClassName("q"));
-// const qNumId = (qEl) => Number.parseInt(qEl.id.replace("q", ""));
-// const emptyQs = () => grid().filter(_qEl => _qEl.innerText === "");
-// const allsame = (arr) => arr.every(_qEl => _qEl.innerText === arr[0].innerText && _qEl.innerText !== "");
-
-// const takeTurn = (index, letter) => grid()[index].innerText = letter;
-// const opponentChoice = () => qNumId(emptyQs()[Math.floor(Math.random() emptyQs().length)]);
-
-// const endGame = () => {}
-// const checkForVictory = () => {}
-
-// const opponentTurn = () => {
-// 	disableListeners();
-// 	setTimeout(() => {
-// 		takeTurn(opponentChoice(), "O");
-// 		if(checkForVictory())
-// 		enableListeners();
-// 	}, 1000);
-
-// }
-
-// const clickFn = (event) => {
-// 	takeTurn(qNumId(event.target), "X");
-// 	if (!checkForVictory())
-// 	opponentTurn();
-// }
-
-// const enableListeners = () => grid().forEach(_qEl => _qEl.addEventListener("click", "clickFn"));
-// const disableListeners = () => grid().forEach(_qEl => _qEl.removeEventListener("click", "clickFn"));
